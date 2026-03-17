@@ -1,0 +1,7 @@
+nombre = input("Ingrese su nombre completo: ").title()
+edad = int(input("Ingrese su edad: "))
+promedio = float(input("Ingrese su promedio academico: "))
+horas_estudio = float(input("Ingrese el número de horas que estudia al día: "))
+materias_reprobadas = int(input("Ingrese el número de materias reprobadas: "))
+asistencia = input("Nivel de asistencia (alta / media / baja): ").lower()
+intereses = input("Escoge tu interés principal (ciencias / tecnologia / arte / deportes / emprendimiento ): ").lower()
