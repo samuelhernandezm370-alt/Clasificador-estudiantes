@@ -1,8 +1,3 @@
-# Clasificación del desempeño académico
-
-# Estas variables deben venir del programa principal
-# (por ahora se pueden poner aquí para probar)
-
 promedio = float(input("Ingrese el promedio académico: "))
 materias_reprobadas = int(input("Ingrese la cantidad de materias reprobadas: "))
 horas_estudio = float(input("Horas de estudio por día: "))
@@ -10,7 +5,6 @@ asistencia = input("Nivel de asistencia (alta, media, baja): ")
 
 print("\n--- Analizando desempeño académico ---\n")
 
-# Clasificación académica
 if promedio >= 4.5 and materias_reprobadas == 0:
     clasificacion = "Excelente"
 
@@ -27,7 +21,6 @@ else:
 print("Clasificación académica:", clasificacion)
 
 
-# Evaluación de hábitos de estudio
 if horas_estudio >= 4:
     print("Buen hábito de estudio")
 
@@ -38,7 +31,6 @@ else:
     print("Debe mejorar sus hábitos de estudio")
 
 
-# Evaluación de asistencia
 if asistencia == "alta":
     print("Excelente asistencia")
 
