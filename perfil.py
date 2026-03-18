@@ -1,19 +1,31 @@
-# Perfil del estudiante
-
-if interes.lower() == "programacion" and horas_estudio >= 3:
+if intereses == "tecnologia" and horas_estudio >= 3:
     perfil = "Perfil técnico"
 
-elif interes.lower() == "matematicas" or interes.lower() == "analisis de datos":
-    perfil = "Perfil analítico"
+elif intereses == "ciencias" and horas_estudio >= 3:
+    perfil = "Perfil científico"
 
-elif asistencia.lower() == "alta" and horas_estudio >= 2:
+elif intereses == "arte":
+    perfil = "Perfil creativo"
+
+elif intereses == "deportes":
+    perfil = "Perfil deportivo"
+
+elif intereses == "emprendimiento":
+    perfil = "Perfil emprendedor"
+
+elif asistencia == "alta" and horas_estudio >= 2:
     perfil = "Perfil disciplinado"
+
+elif asistencia == "baja" and horas_estudio < 2:
+    perfil = "Perfil desmotivado"
+
+elif horas_estudio >= 4:
+    perfil = "Perfil altamente dedicado"
 
 else:
     perfil = "Perfil por fortalecer"
 
 
-# Recomendación Academica
 
 if clasificacion == "En riesgo" and materias_reprobadas >= 2:
     recomendacion = "Asistir a tutorías y reforzar materias reprobadas"
@@ -27,11 +39,11 @@ elif clasificacion == "Crítico":
 elif horas_estudio < 2:
     recomendacion = "Reforzar hábitos de estudio (mínimo 2 horas diarias)"
 
-elif asistencia.lower() == "baja":
+elif asistencia == "baja":
     recomendacion = "Mejorar la asistencia a clases"
 
-elif interes.lower() == "programacion":
-    recomendacion = "Participar en proyectos de programación"
+elif intereses == "tecnologia":
+    recomendacion = "Participar en proyectos tecnológicos"
 
 else:
     recomendacion = "Explorar actividades académicas adicionales"
